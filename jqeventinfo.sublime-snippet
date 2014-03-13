@@ -1,0 +1,41 @@
+<snippet>
+	<content><![CDATA[
+		\$("${1:element}").${2:eventType:click}(function(event){
+
+		var eventtype = typeof(event);
+		var constructoroftype = event.constructor;
+
+		console.log("clicked a link, event type: " 				+ eventtype);
+		console.log("clicked a link, event constructor: " 		+ constructoroftype);
+		console.log("event.currentTarget: " 					+ event.currentTarget);
+		console.log("event.data: " 								+ event.data);
+		console.log("event.delegateTarget: " 					+ event.delegateTarget);
+		console.log("event.isDefaultPrevented(): " 				+ event.isDefaultPrevented());
+		console.log("event.isImmediatePropagationStopped(): " 	+ event.isImmediatePropagationStopped());
+		console.log("event.isPropagationStopped: "  	 	  	+ event.isPropagationStopped);
+		console.log("event.metaKey: " 					 	  	+ event.metaKey);
+		console.log("event.namespace: " 				 	  	+ event.namespace);
+		console.log("event.pageX: " 					 	  	+ event.pageX);
+		console.log("event.pageY: " 					 	  	+ event.pageY);
+		console.log("event.preventedDefault(): " 		 	  	+ event.preventDefault());
+		console.log("event.relatedTarget: " 			 	  	+ event.relatedTarget);
+		console.log("event.result: " 					 	  	+ event.result);
+		console.log("event.stopImmediatePropagation(): " 	  	+ event.stopImmediatePropagation());
+		console.log("event.stopPropagation(): " 		 	  	+ event.stopPropagation()); // stops the normal functioning of the button
+
+		console.log("event.target: " 							+ event.target);
+		console.log("event.target.id: "                         + event.target.id);
+		console.log("event.target.className: "                  + event.target.className);
+
+		console.log("event.timestamp: " 						+ event.timestamp);
+		console.log("event.type: " 								+ event.type);
+		console.log("event.which: "								+ event.which);
+	});
+
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>jqeventinfo</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>
+
