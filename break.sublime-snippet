@@ -1,0 +1,10 @@
+<snippet>
+	<content><![CDATA[
+ROUTE ${1:GET|POST|PUT|UPDATE|DELETE|OPTIONS|HEAD|TRACE|CONNECT} \:Api_Version\\${3:MAIN IDENTIFIER}\\${4:OPTION}\\${5:DETAIL}
+]]></content>
+<tabTrigger>rt</tabTrigger>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<!-- <tabTrigger>hello</tabTrigger> -->
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

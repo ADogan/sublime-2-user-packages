@@ -1,0 +1,12 @@
+
+<snippet>
+	<content><![CDATA[Schema::${1:create-drop}('${2:table_name}', function(\$table)
+		{
+			${3:lartable and tab for shortcut}
+		});
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>larscheme</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>
