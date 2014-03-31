@@ -1,55 +1,68 @@
 <snippet>
 	<content><![CDATA[
 
-
-
       \$.ajax({
       	url:"${1:url}",
       	type:"${2:POST|GET|PUT}",
 
-      	processData: false,
-		data: ,
-		accepts: ,
-		async: ,
-		beforeSend: ,
-		cache: ,
-		complete: ,
-		contents: ,
-		contentType: ,
-		context: ,
-		converters: ,
-		crossDomain: ,
-		data: ,
-		dataFilter: ,
-		dataType: , // (default: Intelligent Guess (xml, json, script, or html))
-		error: ,
-		global: ,
-		headers: ,
-		ifModified: ,
-		isLocal: ,
-		jsonp: ,
-		jsonpCallback: ,
-		mimeType: ,
-		password: ,
-		processData: , // default -> true
-		scriptCharset: ,
-		statusCode : ,
-		success: ,
-		timeout: ,
-		traditional: ,
-		username: ,
-		xhr: , //default: ActiveXObject when available (IE), the XMLHttpRequest otherwise
-		xhrFields: ,
+		processData: false, // default -> true
+
+		// accepts: ,
+		// cache: ,
+		// contents: ,
+		// contentType: ,
+		// context: ,
+		// converters: ,
+		// crossDomain: ,
+		// data: ,
+		// dataFilter: ,
+		// dataType: , // (default: Intelligent Guess (xml, json, script, or html))
+		// global: ,
+		// headers: ,
+		// ifModified: ,
+		// isLocal: ,
+		// jsonp: ,
+		// jsonpCallback: ,
+		// mimeType: ,
+		// scriptCharset: ,
+		// statusCode : ,
+		// timeout: ,
+		// traditional: ,
+		// xhr: , //default: ActiveXObject when available (IE), the XMLHttpRequest otherwise
+		// xhrFields: ,
+
+
+		// username: ,
+		// password: ,
+
+		async: false,
+		beforeSend: function(result){
+			console.log("ajax is not sent yet:");
+			console.log(result);
+		},
+
+		complete: function(result){,
+			console.log("ajax is complete");
+			console.log(result);
+		},
+
+        success: function(result) {
+        	${3}
+			console.log("ajax is successfull");
+			console.log(result);
+        },
+
+        error: function(result) {
+        	${4}
+			console.log("ajax is errorous");
+			console.log(result);
+        },
 });
-
-
-
-
 
 
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-	<tabTrigger>jqueryajax</tabTrigger>
+	<tabTrigger>ajax</tabTrigger>
 	<!-- Optional: Set a scope to limit where the snippet will trigger -->
 	<!-- <scope>source.python</scope> -->
 </snippet>
