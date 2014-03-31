@@ -1,9 +1,10 @@
 <snippet>
 	<content><![CDATA[
 
-		<div id="${1:div_id}" class="${2:div_class}">
-			${3:div_content}
-		</div><!-- ${1:div end} end div -->
+<div id="${1:div_id}" class="${2:div_class}">
+	${3:div_content}
+</div>
+<!-- ${1:div end} end div -->
 
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
